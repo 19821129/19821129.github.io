@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root">如果你看到这个,说明React还没有渲染</div>
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.min.js"></script>
-    <script type="text/babel" src="frontend/src/App.js"></script>
     <script type="text/babel" src="frontend/src/components/Home.js"></script>
     <script type="text/babel" src="frontend/src/components/PostDetail.js"></script>
+    <script type="text/babel" src="frontend/src/App.js"></script>
     <script type="text/babel">
+        console.log('开始渲染React应用');
         ReactDOM.render(
             <React.StrictMode>
                 <App />
             </React.StrictMode>,
             document.getElementById('root')
         );
+        console.log('React应用渲染完成');
     </script>
 </body>
 </html>

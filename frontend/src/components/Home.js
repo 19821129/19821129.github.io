@@ -1,23 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
-const posts = [
-  { id: 1, title: '第一篇博客文章', content: '这是第一篇博客文章的内容...' },
-  { id: 2, title: '第二篇博客文章', content: '这是第二篇博客文章的内容...' },
-];
-
 function Home() {
+  console.log('Home组件被渲染');
   return (
     <div>
       <h2>最新文章</h2>
-      {posts.map(post => (
-        <div key={post.id} className="post">
-          <h3><Link to={`/post/${post.id}`}>{post.title}</Link></h3>
-          <p>{post.content.substring(0, 100)}...</p>
-        </div>
-      ))}
+      <div className="post">
+        <h3><a href="/post/1">第一篇博客文章</a></h3>
+        <p>这是第一篇博客文章的内容...</p>
+      </div>
+      <div className="post">
+        <h3><a href="/post/2">第二篇博客文章</a></h3>
+        <p>这是第二篇博客文章的内容...</p>
+      </div>
     </div>
   );
 }
-
-export default Home;

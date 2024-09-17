@@ -7,6 +7,7 @@ import './styles/main.css';
 const { BrowserRouter, Route, Switch, Link } = ReactRouterDOM;
 
 function App() {
+  console.log('App组件被渲染');
   return (
     <BrowserRouter>
       <div className="App">

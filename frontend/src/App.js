@@ -9,27 +9,10 @@ const { Link } = ReactRouterDOM;
 function App() {
   console.log('App组件被渲染');
   return (
-    <ReactRouterDOM.BrowserRouter>
-      <div className="App">
-        <header>
-          <h1>我的博客</h1>
-          <nav>
-            <ul>
-              <li><Link to="/">首页</Link></li>
-            </ul>
-          </nav>
-        </header>
-        <main>
-          <ReactRouterDOM.Switch>
-            <ReactRouterDOM.Route exact path="/" component={Home} />
-            <ReactRouterDOM.Route path="/post/:id" component={PostDetail} />
-          </ReactRouterDOM.Switch>
-        </main>
-        <footer>
-          <p>&copy; 2023 我的博客. 保留所有权利。</p>
-        </footer>
-      </div>
-    </ReactRouterDOM.BrowserRouter>
+    <div className="App">
+      <h1>我的博客</h1>
+      <p>这是一个简单的React应用</p>
+    </div>
   );
 }
 

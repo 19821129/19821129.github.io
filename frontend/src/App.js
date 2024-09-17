@@ -4,12 +4,12 @@ import Home from './components/Home';
 import PostDetail from './components/PostDetail';
 import './styles/main.css';
 
-const { BrowserRouter, Route, Switch, Link } = ReactRouterDOM;
+const { Link } = ReactRouterDOM;
 
 function App() {
   console.log('App组件被渲染');
   return (
-    <BrowserRouter>
+    <ReactRouterDOM.BrowserRouter>
       <div className="App">
         <header>
           <h1>我的博客</h1>
@@ -20,16 +20,16 @@ function App() {
           </nav>
         </header>
         <main>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/post/:id" component={PostDetail} />
-          </Switch>
+          <ReactRouterDOM.Switch>
+            <ReactRouterDOM.Route exact path="/" component={Home} />
+            <ReactRouterDOM.Route path="/post/:id" component={PostDetail} />
+          </ReactRouterDOM.Switch>
         </main>
         <footer>
           <p>&copy; 2023 我的博客. 保留所有权利。</p>
         </footer>
       </div>
-    </BrowserRouter>
+    </ReactRouterDOM.BrowserRouter>
   );
 }
 

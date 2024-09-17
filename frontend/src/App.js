@@ -10,9 +10,15 @@ function App() {
   console.log('App组件被渲染');
   return (
     <div className="App">
-      <h1>我的博客</h1>
-      <p>这是一个简单的React应用</p>
-      <Home />
+      <header>
+        <h1>我的博客</h1>
+      </header>
+      <main>
+        <Home />
+      </main>
+      <footer>
+        <p>&copy; 2023 我的博客. 保留所有权利。</p>
+      </footer>
     </div>
   );
 }

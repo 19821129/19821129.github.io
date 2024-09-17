@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>我的博客</h1>
+        <h1 style={{color: 'blue'}}>我的博客</h1>
       </header>
       <main>
         <Home />

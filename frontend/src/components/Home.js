@@ -7,10 +7,10 @@ function Home() {
 
   return (
     <div>
-      <h2>最新文章</h2>
+      <h2 style={{color: 'green'}}>最新文章</h2>
       {posts.map(post => (
-        <div key={post.id} className="post">
-          <h3>{post.title}</h3>
+        <div key={post.id} className="post" style={{border: '1px solid #ddd', margin: '10px 0', padding: '10px'}}>
+          <h3 style={{color: 'red'}}>{post.title}</h3>
           <p>{post.content}</p>
         </div>
       ))}

@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       <h1>我的博客</h1>
       <p>这是一个简单的React应用</p>
+      <Home />
     </div>
   );
 }

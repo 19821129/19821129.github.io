@@ -11,15 +11,19 @@
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.min.js"></script>
+    <script type="text/babel" src="frontend/src/components/Home.js"></script>
+    <script type="text/babel" src="frontend/src/components/PostDetail.js"></script>
+    <script type="text/babel" src="frontend/src/App.js"></script>
     <script type="text/babel">
-        function SimpleApp() {
-            return <h1>Hello, React!</h1>;
-        }
-
+        console.log('开始渲染React应用');
         ReactDOM.render(
-            <SimpleApp />,
+            <React.StrictMode>
+                <App />
+            </React.StrictMode>,
             document.getElementById('root')
         );
+        console.log('React应用渲染完成');
     </script>
 </body>
 </html>
